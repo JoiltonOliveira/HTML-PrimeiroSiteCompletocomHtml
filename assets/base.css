@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #faefaf;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.menu li a.active {
+    font-weight: bold;
+    color: #0a3f3f;
+    text-decoration: underline;
+}
+.menu li a.active::after {
+    content: " \2022";
+    color: #0a3f3f;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.header-content-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    padding: 16px;
+    overflow: visible;
+    min-height: auto;
+    flex: 1 1 320px;
+}
+.header img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 12px;
+    border-radius: 8px;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+    flex: 1 1 320px;
+}
+.content table.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+.content table.schedule-table th,
+.content table.schedule-table td {
+    border: 1px solid #d4c7a1;
+    padding: 10px;
+    text-align: left;
+}
+.content table.schedule-table th {
+    background-color: #efe2c1;
+}
+.content table.schedule-table tbody tr:nth-child(odd) {
+    background-color: #fcf7e9;
+}
+/* Contact form and map styles */
+.map-wrapper {
+    margin-top: 12px;
+}
+.contact-form {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-buttons {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+}
+.form-buttons button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #056c6c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-buttons button[type="reset"] {
+    background-color: #999;
+}
+/* Map and footer layout fixes to avoid overlap */
+.map-wrapper {
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+@media (max-width: 900px) {
+    .header-content-row {
+        flex-direction: column;
+    }
+}
+.footer {
+    background-color: rgb(99, 56, 240);
+    min-height: 150px;
+    position: static;
+    clear: both;
+    margin-top: 24px;
+}

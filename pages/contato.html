@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="../assets/base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+        <li><a href="../index.html">Página Principal</a></li>
+        <li><a href="sobre.html">Sobre a clínica</a></li>
+        <li><a href="horario.html">Horário de Atendimento</a></li>
+        <li><a class="active" href="contato.html">Contato</a></li>
+             </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                Header
+                <!-- Aqui vai o seu header -->
+                <img src="../img/contato.avif" alt="Imagem de contato da clínica">
+            </div>
+    
+            <div class="content">
+                <h2>Fale conosco</h2>
+
+                <h3>Contato rápido</h3>
+                <p>Telefone: (84) 99999-9999 | WhatsApp: (84) 98888-8888</p>
+
+                <h3>Endereço</h3>
+                <address>
+                    Rua Alceu Emiliano, 47<br>
+                    Bairro: Praia de Barra de Tabatinga<br>
+                    Nísia Floresta - RN<br>
+                    CEP: 59164-000
+                </address>
+
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Rua%20Alceu%20Emiliano%2047%20Praia%20de%20Barra%20de%20Tabatinga%20N%C3%ADsia%20Floresta%20RN%2059164-000&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <h3>Envie uma mensagem</h3>
+                <form class="contact-form" action="#" method="post">
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" required>
+
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="assunto">Assunto</label>
+                    <input id="assunto" name="assunto" type="text" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                    <div class="form-buttons">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
